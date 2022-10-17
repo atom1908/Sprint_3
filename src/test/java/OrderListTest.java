@@ -36,7 +36,6 @@ public class OrderListTest {
     }
 
     @Test
-    @DisplayName("Check status code of /users/me")
     public void getOrderList() {
         CreateCourierRequest randomCourier = getRandomCourierRequest();
 
