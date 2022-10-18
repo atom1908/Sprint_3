@@ -1,3 +1,6 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,6 +34,8 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("Создание курьера")
+    @Description("Тест создания курьера")
     public void addCourier() {
         CreateCourierRequest randomCourier = getRandomCourierRequest();
 
@@ -51,7 +56,7 @@ public class CreateCourierTest {
                 .path("id");
     }
 
-    @Test
+    @Step("Отсутствует поле логин")
     public void loginFieldMissingError() {
         CreateCourierRequest randomCourier = loginMissing();
 

@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -36,6 +37,7 @@ public class OrderListTest {
     }
 
     @Test
+    @DisplayName("Получение списка заказов")
     public void getOrderList() {
         CreateCourierRequest randomCourier = getRandomCourierRequest();
 
