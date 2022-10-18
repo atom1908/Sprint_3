@@ -68,7 +68,7 @@ public class CreateCourierTest {
 
     }
 
-/*   @Test
+   @Test
     public void passwordFieldMissingError() {
         CreateCourierRequest randomCourier = passwordMissing();
 
@@ -78,7 +78,7 @@ public class CreateCourierTest {
                 .and()
                 .body("message", equalTo("Недостаточно данных для создания учетной записи"));
 
-    }*/
+    }
 
     @Test
     public void userExistsError() {
